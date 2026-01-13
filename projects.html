@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Community Projects</title>
 
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="Hall of Fame (1).png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-      /* Projects grid vs compact (row) view */
-      .projects-container {
+    /* Projects grid vs compact (row) view */
+    .projects-container {
         max-width: 1200px;
         margin: 0 auto;
         display: grid;
@@ -21,226 +19,198 @@
         gap: 20px;
         padding: 0 20px 40px;
         box-sizing: border-box;
-      }
+    }
 
-      .project-card {
+    .project-card {
         background: var(--bg-card);
         border: 1px solid var(--border-secondary);
         padding: 16px;
         border-radius: 12px;
         box-shadow: var(--shadow-sm);
         transition: transform 0.15s ease, box-shadow 0.15s ease;
-        display: block;
-      }
+        display: flex;
+        flex-direction: column;
+    }
 
-      .project-card:hover {
+    .project-card:hover {
         transform: translateY(-6px);
         box-shadow: var(--shadow-md);
-      }
+    }
 
-      .project-desc {
-        color: var(--text-secondary);
-        margin: 8px 0;
-      }
+    .project-desc { 
+        color: var(--text-secondary); 
+        margin: 8px 0; 
+        flex-grow: 1;
+    }
 
-      .project-tags {
-        display: flex;
-        gap: 8px;
-        flex-wrap: wrap;
-        margin-top: 8px;
-      }
-      .project-tags span {
-        background: rgba(255, 255, 255, 0.03);
+    .project-tags { 
+        display: flex; 
+        gap: 8px; 
+        flex-wrap: wrap; 
+        margin-top: 8px; 
+    }
+    
+    .project-tags span {
+        background: rgba(255,255,255,0.03);
         padding: 6px 8px;
         border-radius: 8px;
         font-size: 0.8rem;
         color: var(--text-secondary);
-      }
+    }
 
-      .project-links a {
-        margin-right: 12px;
-        text-decoration: none;
-        color: var(--text-primary);
-        font-weight: 600;
-      }
-      .project-footer {
-        margin-top: 12px;
-        font-size: 0.85rem;
-        color: var(--text-secondary);
-      }
+    .project-links a { 
+        margin-right: 12px; 
+        text-decoration: none; 
+        color: var(--text-primary); 
+        font-weight: 600; 
+    }
+    
+    .project-footer { 
+        margin-top: 12px; 
+        font-size: 0.85rem; 
+        color: var(--text-secondary); 
+    }
 
-      /* Compact (row/list) view */
-      .projects-container.compact-view {
+    /* Compact (row/list) view */
+    .projects-container.compact-view {
         display: block;
         padding: 0 20px 40px;
-      }
+    }
 
-      .projects-container.compact-view .project-card {
+    .projects-container.compact-view .project-card {
         display: flex;
+        flex-direction: row;
         gap: 16px;
-        align-items: center;
-        padding: 12px;
-      }
+        align-items: flex-start;
+        padding: 16px;
+        margin-bottom: 12px;
+    }
 
-      .projects-container.compact-view .project-card h2 {
+    .projects-container.compact-view .project-card > * {
         margin: 0;
-        font-size: 1.05rem;
-      }
+    }
 
-      @media (max-width: 600px) {
-        .projects-container {
-          grid-template-columns: 1fr;
-        }
+    .projects-container.compact-view .project-card h2 { 
+        margin: 0; 
+        font-size: 1.05rem; 
+        min-width: 200px;
+    }
+
+    .projects-container.compact-view .project-desc {
+        flex-grow: 1;
+        margin: 0;
+    }
+
+    .projects-container.compact-view .project-tags {
+        min-width: 150px;
+        margin-top: 0;
+    }
+
+    .projects-container.compact-view .project-links {
+        min-width: 120px;
+    }
+
+    .projects-container.compact-view .project-footer {
+        margin-top: 0;
+        min-width: 150px;
+        text-align: right;
+    }
+
+    @media (max-width: 900px) {
         .projects-container.compact-view .project-card {
-          flex-direction: column;
-          align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 12px;
         }
-      }
+        
+        .projects-container.compact-view .project-card > * {
+            min-width: auto !important;
+            flex: 1 1 auto;
+        }
+        
+        .projects-container.compact-view .project-footer {
+            text-align: left;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .projects-container { 
+            grid-template-columns: 1fr; 
+        }
+        
+        .projects-container.compact-view .project-card { 
+            flex-direction: column; 
+            align-items: stretch;
+            gap: 12px;
+        }
+    }
     </style>
-  </head>
+</head>
 
-  <body>
-    <!-- NAVBAR -->
-    <nav class="navbar">
-      <div class="nav-logo">🚀 Community</div>
+<body>
 
-      <div class="hamburger" id="hamburger">
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-logo">🚀 Community</div>
+
+    <div class="hamburger" id="hamburger">
         <span></span><span></span><span></span>
-      </div>
+    </div>
 
-      <ul class="nav-links" id="navLinks">
+    <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html" class="active">Projects</a></li>
         <li><a href="contribute.html">Contribute</a></li>
         <li><a href="faq.html">FAQ</a></li>
-      </ul>
+    </ul>
 
-      <button id="themeToggle" class="theme-toggle">🌙</button>
-    </nav>
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+</nav>
 
-    <!-- HEADER -->
-    <header class="projects-header">
-      <h1>Community Projects</h1>
-      <p>
-        A collection of small projects built by contributors. Learn, explore,
-        and get inspired 🌱
-      </p>
-    </header>
-    <!-- VIEW TOGGLE -->
-    <div
-      style="
-        display: flex;
-        justify-content: flex-end;
-        max-width: 1200px;
-        margin: 0 auto 20px;
-        padding: 0 20px;
-      "
-    >
-      <button id="viewToggleBtn" class="view-toggle-btn" title="Toggle view">
+<!-- HEADER -->
+<header class="projects-header">
+    <h1>Community Projects</h1>
+    <p>
+        A collection of small projects built by contributors.  
+        Learn, explore, and get inspired 🌱
+    </p>
+</header>
+
+<!-- VIEW TOGGLE -->
+<div style="display:flex; justify-content:flex-end; max-width:1200px; margin:0 auto 20px; padding:0 20px;">
+    <button id="viewToggleBtn" class="view-toggle-btn" title="Toggle view">
         <i class="fas fa-th-large"></i>
-      </button>
-    </div>
-    <div class="search-filter-container">
-      <input
+    </button>
+</div>
+
+<!-- SEARCH AND FILTER -->
+<div class="search-filter-container">
+    <input
         type="text"
         id="searchInput"
         placeholder="Search projects, tech, or contributor..."
-      />
+    />
 
-      <div class="filter-buttons">
+    <div class="filter-buttons">
         <button class="filter-btn active" data-tech="all">All</button>
         <button class="filter-btn" data-tech="html">HTML</button>
         <button class="filter-btn" data-tech="css">CSS</button>
         <button class="filter-btn" data-tech="javascript">JavaScript</button>
-      </div>
+    </div>
 
-      <select id="sortSelect" class="sort-select">
+    <select id="sortSelect" class="sort-select">
         <option value="az">A–Z</option>
         <option value="za">Z–A</option>
-      </select>
-    </div>
+    </select>
+</div>
 
-    <!-- PROJECTS GRID -->
-    <section class="projects-container">
-      <!-- PROJECT CARD TEMPLATE -->
-      <div class="project-card">
+<!-- PROJECTS GRID -->
+<section class="projects-container">
+
+    <!-- PROJECT CARD TEMPLATE -->
+    <div class="project-card">
         <h2>Sample Card</h2>
         <p class="project-desc">
-          This is a sample project description. Replace this with actual project
-          details.
-        </p>
-
-        <div class="project-tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-        </div>
-
-        <div class="project-links">
-          <a href="#" target="_blank"> <i class="fab fa-github"></i> GitHub </a>
-          <a href="#" target="_blank">
-            <i class="fas fa-external-link-alt"></i> Live
-          </a>
-        </div>
-
-        <div class="project-footer">
-          <span>By</span>
-          <a href="https://github.com/Sneha-Amballa" target="_blank"
-            >Amballa Sneha</a
-          >
-        </div>
-      </div>
-      <!-- END PROJECT CARD -->
-      <!-- 👇 CONTRIBUTORS ADD NEW PROJECTS BELOW 👇 -->
-      <div class="project-card">
-        <h2>Advanced Text Case Converter</h2>
-
-        <p class="project-desc">
-          A powerful text utility that converts text into multiple cases
-          including uppercase, lowercase, sentence case, title case, and toggle
-          case with live preview, undo history, and keyboard shortcuts.
-        </p>
-
-        <div class="project-tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>Utility Tool</span>
-        </div>
-
-        <div class="project-links">
-          <a
-            href="https://github.com/Sneha-Amballa/advanced-text-case-converter"
-            target="_blank"
-          >
-            <i class="fab fa-github"></i> GitHub
-          </a>
-          <a
-            href="https://sneha-amballa.github.io/advanced-text-case-converter/"
-            target="_blank"
-          >
-            <i class="fas fa-external-link-alt"></i> Live
-          </a>
-        </div>
-
-        <div class="project-footer">
-          <span>By</span>
-          <a href="https://github.com/Sneha-Amballa" target="_blank"
-            >Amballa Sneha</a
-          >
-        </div>
-      </div>
-    <div class="project-footer">
-        <span>By</span>
-        <a href="https://github.com/Sneha-Amballa" target="_blank">Amballa Sneha</a>
-    </div>
-    <!-- END PROJECT CARD -->
-    <!-- 👇 CONTRIBUTORS ADD NEW PROJECTS BELOW 👇 -->
-        <div class="project-card">
-        <h2>Code Editor</h2>
-        <p class="project-desc">
-            A professional code editor with multi-language support, customizable themes,
-            real-time preview, and essential features like code download and clearing.  
+            This is a sample project description. Replace this with actual project details.
         </p>
 
         <div class="project-tags">
@@ -250,449 +220,448 @@
         </div>
 
         <div class="project-links">
-            <a href="./projects/code-editor/" target="_blank">
+            <a href="#" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="#" target="_blank">
                 <i class="fas fa-external-link-alt"></i> Live
             </a>
         </div>
 
         <div class="project-footer">
             <span>By</span>
-            <a href="https://github.com/omkarhole" target="_blank">Omkar</a>
+            <a href="https://github.com/Sneha-Amballa" target="_blank">Amballa Sneha</a>
         </div>
     </div>
-     <div class="project-card">
-    <h2>Advanced Text Case Converter</h2>
-</div>
+    <!-- END PROJECT CARD -->
 
-
+    <!-- 👇 CONTRIBUTORS ADD NEW PROJECTS BELOW 👇 -->
+    <div class="project-card">
+        <h2>Advanced Text Case Converter</h2>
+        <p class="project-desc">
+            A powerful text utility that converts text into multiple cases including
+            uppercase, lowercase, sentence case, title case, and toggle case with
+            live preview, undo history, and keyboard shortcuts.
+        </p>
+        <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Utility Tool</span>
+        </div>
+        <div class="project-links">
+            <a href="https://github.com/Sneha-Amballa/advanced-text-case-converter" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://sneha-amballa.github.io/advanced-text-case-converter/" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live
+            </a>
+        </div>
+        <div class="project-footer">
+            <span>By</span>
+            <a href="https://github.com/Sneha-Amballa" target="_blank">Amballa Sneha</a>
+        </div>
+    </div>
 
     <div class="project-card">
-    <h2>Hangman Game</h2>
-    <p class="project-desc">
-        A classic Hangman game where players guess letters to reveal a hidden word
-        before running out of attempts. Features multiple categories, hints, and a
-        scoring system.
-    </p>
-
-    <div class="project-tags">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-    </div>
-
-    <div class="project-links">
-        <a href="./projects/hangman-game/" target="_blank">
-            <i class="fas fa-external-link-alt"></i> Live
-        </a>
-    </div>
-
-    <div class="project-footer">
-        <span>By</span>
-        <a href="https://github.com/omkarhole" target="_blank">omkar</a>
-    </div>
-</div>
-
-    <div class="project-card">
-    <h2>VerboMemory</h2>
-    <p class="project-desc">
-        An interactive word memory game that challenges players to recall words after a brief display. Improve focus, memory, and vocabulary in a fun way.
-    </p>
-
-    <div class="project-tags">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-    </div>
-
-      <div class="project-card">
-        <h2>VerboMemory</h2>
+        <h2>Code Editor</h2>
         <p class="project-desc">
-          An interactive word memory game that challenges players to recall
-          words after a brief display. Improve focus, memory, and vocabulary in
-          a fun way.
+            A professional code editor with multi-language support, customizable themes,
+            real-time preview, and essential features like code download and clearing.
         </p>
-
-        <div class="project-tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-        </div>
-
-        <div class="project-links">
-          <a href="./projects/Verbo-memory/" target="_blank">
-            <i class="fas fa-external-link-alt"></i> Live
-          </a>
-        </div>
-
-        <div class="project-footer">
-          <span>By</span>
-          <a href="https://github.com/your-github-username" target="_blank"
-            >Anvesha</a
-          >
-        </div>
-      </div>
-
-      <div class="project-card">
-        <h2>Client-Side File Upload Handling</h2>
-        <p class="project-desc">
-          A modern file upload feature with image, PDF, and document support.
-          Users can preview files, view file size, and remove files before
-          submission. Includes file type and size validation for a seamless
-          experience.
-        </p>
-
-        <div class="project-tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-        </div>
-<div class="project-card">
-    <h2>Todo List</h2>
-    <p class="project-desc">
-        A simple and interactive To-Do List application that allows users to add, manage, and track their daily tasks with ease.
-    </p>
-
-    <div class="project-tags">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-    </div>
-
-    <div class="project-links">
-        <a href="./projects/todo-list/" target="_blank">
-            <i class="fas fa-external-link-alt"></i> Live
-        </a>
-    </div>
-
-    <div class="project-footer">
-        <span>By</span>
-        <a href="https://github.com/omkarhole" target="_blank">Omkar</a>
-    </div>
-</div>
-
-        <div class="project-links">
-          <a href="./projects/client-side-file-upload-preview/" target="_blank">
-            <i class="fas fa-external-link-alt"></i> Live
-          </a>
-        </div>
-
-        <div class="project-footer">
-          <span>By</span>
-          <a href="https://github.com/your-github-username" target="_blank"
-            >Anvesha</a
-          >
-        </div>
-      </div>
-
-      <div class="project-card">
-        <h2>Random Dice Generator</h2>
-        <p class="project-desc">
-          A simple and interactive dice rolling simulator. Press the button to
-          roll the dice and get a random number from 1 to 6.
-        </p>
-
-        <div class="project-tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-        </div>
-
-        <div class="project-links">
-          <a href="./projects/random-dice-generator/" target="_blank">
-            <i class="fas fa-external-link-alt"></i> Live
-          </a>
-        </div>
-
-        <div class="project-footer">
-          <span>By</span>
-          <a href="https://github.com/gemini" target="_blank">Gemini</a>
-        </div>
-    </div>
-     <div class="project-card">
-        <h2>Advance Text Case Convertor </h2>
-        <p class="project-desc">
-            A web application that allows users to convert text into various cases such as uppercase,
-             lowercase, title case, sentence case, and toggle case with additional features like live
-              preview and undo history.
-        </p>
-
         <div class="project-tags">
             <span>HTML</span>
             <span>CSS</span>
             <span>JavaScript</span>
         </div>
-
-    <div class="project-links">
-        <a href="./projects/Advanced_TextCaseConverter_live_processing_clipboard_integration/" target="_blank">
-            <i class="fab fa-github"></i> GitHub
-        </a>
-        <a href="./projects/Advanced_TextCaseConverter_live_processing_clipboard_integration/index.html" target="_blank">
-            <i class="fas fa-external-link-alt"></i> Live
-        </a>
+        <div class="project-links">
+            <a href="./projects/code-editor/" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live
+            </a>
+        </div>
+        <div class="project-footer">
+            <span>By</span>
+            <a href="https://github.com/omkarhole" target="_blank">Omkar</a>
+        </div>
     </div>
 
-    <div class="project-footer">
-        <span>By</span>
-        <a href="https://github.com/neeru24" target="_blank">Omkar</a>
+    <div class="project-card">
+        <h2>Hangman Game</h2>
+        <p class="project-desc">
+            A classic Hangman game where players guess letters to reveal a hidden word
+            before running out of attempts. Features multiple categories, hints, and a scoring system.
+        </p>
+        <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+        <div class="project-links">
+            <a href="./projects/hangman-game/" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live
+            </a>
+        </div>
+        <div class="project-footer">
+            <span>By</span>
+            <a href="https://github.com/omkarhole" target="_blank">Omkar</a>
+        </div>
     </div>
+
+    <div class="project-card">
+        <h2>VerboMemory</h2>
+        <p class="project-desc">
+            An interactive word memory game that challenges players to recall words after a brief display. Improve focus, memory, and vocabulary in a fun way.
+        </p>
+        <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+        <div class="project-links">
+            <a href="./projects/Verbo-memory/" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live
+            </a>
+        </div>
+        <div class="project-footer">
+            <span>By</span>
+            <a href="https://github.com/your-github-username" target="_blank">Anvesha</a>
+        </div>
     </div>
-    
 
-      </div>
+    <div class="project-card">
+        <h2>Todo List</h2>
+        <p class="project-desc">
+            A simple and interactive To-Do List application that allows users to add, manage, and track their daily tasks with ease.
+        </p>
+        <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+        <div class="project-links">
+            <a href="./projects/todo-list/" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live
+            </a>
+        </div>
+        <div class="project-footer">
+            <span>By</span>
+            <a href="https://github.com/omkarhole" target="_blank">Omkar</a>
+        </div>
+    </div>
 
-      <div class="project-card">
+    <div class="project-card">
+        <h2>Client-Side File Upload Handling</h2>
+        <p class="project-desc">
+            A modern file upload feature with image, PDF, and document support.
+            Users can preview files, view file size, and remove files before
+            submission. Includes file type and size validation for a seamless experience.
+        </p>
+        <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+        <div class="project-links">
+            <a href="./projects/client-side-file-upload-preview/" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live
+            </a>
+        </div>
+        <div class="project-footer">
+            <span>By</span>
+            <a href="https://github.com/your-github-username" target="_blank">Anvesha</a>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <h2>Random Dice Generator</h2>
+        <p class="project-desc">
+            A simple and interactive dice rolling simulator. Press the button to
+            roll the dice and get a random number from 1 to 6.
+        </p>
+        <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+        <div class="project-links">
+            <a href="./projects/random-dice-generator/" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live
+            </a>
+        </div>
+        <div class="project-footer">
+            <span>By</span>
+            <a href="https://github.com/gemini" target="_blank">Gemini</a>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <h2>Advanced Text Case Convertor</h2>
+        <p class="project-desc">
+            A web application that allows users to convert text into various cases such as uppercase,
+            lowercase, title case, sentence case, and toggle case with additional features like live
+            preview and undo history.
+        </p>
+        <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+        <div class="project-links">
+            <a href="./projects/Advanced_TextCaseConverter_live_processing_clipboard_integration/" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="./projects/Advanced_TextCaseConverter_live_processing_clipboard_integration/index.html" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live
+            </a>
+        </div>
+        <div class="project-footer">
+            <span>By</span>
+            <a href="https://github.com/neeru24" target="_blank">Neeru</a>
+        </div>
+    </div>
+
+    <div class="project-card">
         <h2>Tab Organizer</h2>
         <p class="project-desc">Save and organize your URLs into Categories</p>
-
         <div class="project-tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
         </div>
-
         <div class="project-links">
-          <a href="./projects/Tab-organiser" target="_blank">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-          <a href="./projects/Tab-organiser/index.html" target="_blank">
-            <i class="fas fa-external-link-alt"></i> Live
-          </a>
+            <a href="./projects/Tab-organiser" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="./projects/Tab-organiser/index.html" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live
+            </a>
         </div>
-
         <div class="project-footer">
-          <span>By</span>
-          <a href="https://github.com/neeru24" target="_blank">Neeru</a>
+            <span>By</span>
+            <a href="https://github.com/neeru24" target="_blank">Neeru</a>
         </div>
-      </div>
-      <div class="project-card">
-        <h2>Number Guessing Game</h2>
-    <div class="project-footer">
-        <span>By</span>
-        <a href="https://github.com/neeru24" target="_blank">Neeru</a>
-    </div>
-    </div>
- <div class="project-card">
-    <h2>Simple Interest Calculator</h2>
-    <p class="project-desc">
-           A straightforward calculator that computes simple interest based on user-inputted principal amount, rate of interest, and time period.   
-    </p>
-
-    <div class="project-tags">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
     </div>
 
-    <div class="project-links">
-        <a href="./projects/simple-interest-calculator/" target="_blank">
-            <i class="fas fa-external-link-alt"></i> Live
-        </a>
-    </div>
-
-    <div class="project-footer">
-        <span>By</span>
-        <a href="https://github.com/omkarhole" target="_blank">omkar</a>
-    </div>
-</div>
     <div class="project-card">
-    <h2>Chess Game</h2>
-    <p class="project-desc">
-        A web-based chess game that allows two players to play against each other
-         with a user-friendly interface and basic game rules implemented.
-    </p>
-
-    <div class="project-tags">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
+        <h2>KeyCode Reveal</h2>
+        <p class="project-desc">
+            A web application that displays the keycode, key name, and other details of any key pressed on the keyboard in real-time.
+        </p>
+        <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+        <div class="project-links">
+            <a href="./projects/keycodeReveal" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="./projects/keycodeReveal/index.html" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live
+            </a>
+        </div>
+        <div class="project-footer">
+            <span>By</span>
+            <a href="https://github.com/neeru24" target="_blank">Neeru</a>
+        </div>
     </div>
 
-    <div class="project-links">
-        <a href="./projects/chess/" target="_blank">
-            <i class="fas fa-external-link-alt"></i> Live
-        </a>
+    <div class="project-card">
+        <h2>Simple Interest Calculator</h2>
+        <p class="project-desc">
+            A straightforward calculator that computes simple interest based on user-inputted principal amount, rate of interest, and time period.
+        </p>
+        <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+        <div class="project-links">
+            <a href="./projects/simple-interest-calculator/" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live
+            </a>
+        </div>
+        <div class="project-footer">
+            <span>By</span>
+            <a href="https://github.com/omkarhole" target="_blank">Omkar</a>
+        </div>
     </div>
 
-    <div class="project-footer">
-        <span>By</span>
-        <a href="https://github.com/omkarhole" target="_blank">omkar</a>
+    <div class="project-card">
+        <h2>Chess Game</h2>
+        <p class="project-desc">
+            A web-based chess game that allows two players to play against each other
+            with a user-friendly interface and basic game rules implemented.
+        </p>
+        <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+        <div class="project-links">
+            <a href="./projects/chess/" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live
+            </a>
+        </div>
+        <div class="project-footer">
+            <span>By</span>
+            <a href="https://github.com/omkarhole" target="_blank">Omkar</a>
+        </div>
     </div>
-</div>
-     <div class="project-card">
+
+    <div class="project-card">
         <h2>Memory Card Flip Game</h2>
         <p class="project-desc">
             A fun memory card flip game where players match pairs of cards by flipping them over. Test your memory skills and improve concentration!
         </p>
-
         <div class="project-tags">
             <span>HTML</span>
             <span>CSS</span>
             <span>JavaScript</span>
         </div>
-
-    <div class="project-links">
-        <a href="./projects/Memory Card Flip Game/index.html" target="_blank">
-            <i class="fas fa-external-link-alt"></i> Live
-        </a>
+        <div class="project-links">
+            <a href="./projects/Memory Card Flip Game/index.html" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live
+            </a>
+        </div>
+        <div class="project-footer">
+            <span>By</span>
+            <a href="https://github.com/neeru24" target="_blank">Neeru</a>
+        </div>
     </div>
 
-    <div class="project-footer">
-        <span>By</span>
-        <a href="https://github.com/neeru24" target="_blank">Omkar</a>
-    </div>
-    </div>
-     <div class="project-card">
+    <div class="project-card">
         <h2>QR code Generator</h2>
         <p class="project-desc">
             A simple QR code generator that allows users to create QR codes for URLs, text, or other data.
         </p>
-
         <div class="project-tags">
             <span>HTML</span>
             <span>CSS</span>
             <span>JavaScript</span>
         </div>
-
-    <div class="project-links">
-        <a href="./projects/qr-code-generator/index.html" target="_blank">
-            <i class="fas fa-external-link-alt"></i> Live
-        </a>
+        <div class="project-links">
+            <a href="./projects/qr-code-generator/index.html" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live
+            </a>
+        </div>
+        <div class="project-footer">
+            <span>By</span>
+            <a href="https://github.com/omkar" target="_blank">Omkar</a>
+        </div>
     </div>
 
-    <div class="project-footer">
-        <span>By</span>
-        <a href="https://github.com/omkar" target="_blank">Omkar</a>
-    </div>
-    </div>
-
-
-
-
-
-<div class="project-card">
-        <h2>SQL Query Visulizer</h2>
+    <div class="project-card">
+        <h2>SQL Query Visualizer</h2>
         <p class="project-desc">
             A web-based tool that helps users visualize SQL queries and their results in an interactive manner.
         </p>
-
         <div class="project-tags">
             <span>HTML</span>
             <span>CSS</span>
             <span>JavaScript</span>
         </div>
-
-    <div class="project-links">
-        <a href="./projects/SQL_Query_Visualizer/index.html" target="_blank">
-            <i class="fas fa-external-link-alt"></i> Live
-        </a>
-    </div>
-
-    <div class="project-footer">
-        <span>By</span>
-        <a href="https://github.com/omkarhole" target="_blank">Omkar</a>
-    </div>
-    </div> 
- <div class="project-card">
-    <h2>Number Guessing Game</h2>
-
-
- <div class="project-card">
-    <h2>Pathfinding Visualizer</h2>
-    <p class="project-desc">
-        An interactive pathfinding visualizer that demonstrates various algorithms
-        like Dijkstra's, A*, BFS, and DFS on a grid with walls and weights.
-    </p>
-
-    <div class="project-tags">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-    </div>
-
-    <div class="project-links">
-        <a href="./projects/Pathfinding_Visualizer/" target="_blank">
-            <i class="fas fa-external-link-alt"></i> Live
-        </a>
-    </div>
-    <div class="project-footer">
-        <span>By</span>
-        <a href="https://github.com/omkarhole" target="_blank">Omkar</a>
-    </div>
-</div>
- <div class="project-card">
-    <h2>Number Guessing Game</h2>
-
-    <p class="project-desc">
-        An interactive number guessing game where users try to guess a secret number
-        between 1 and 100 with limited attempts, real-time feedback, and helpful hints.
-    </p>
-
-    <div class="project-tags">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-    </div>
-
-        <p class="project-desc">
-          An interactive number guessing game where users try to guess a secret
-          number between 1 and 100 with limited attempts, real-time feedback,
-          and helpful hints.
-        </p>
-
-        <div class="project-tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-        </div>
-
         <div class="project-links">
-          <a href="./projects/Number_Guessing_Game/" target="_blank">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-          <a href="./projects/Number_Guessing_Game/index.html" target="_blank">
-            <i class="fas fa-external-link-alt"></i> Live
-          </a>
+            <a href="./projects/SQL_Query_Visualizer/index.html" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live
+            </a>
         </div>
-
         <div class="project-footer">
-          <span>By</span>
-          <a href="https://github.com/Sneha-Amballa" target="_blank"
-            >Amballa Sneha</a
-          >
+            <span>By</span>
+            <a href="https://github.com/omkarhole" target="_blank">Omkar</a>
         </div>
-      </div>
-      <div class="project-card">
+    </div>
+
+    <div class="project-card">
+        <h2>Number Guessing Game</h2>
+        <p class="project-desc">
+            An interactive number guessing game where users try to guess a secret number
+            between 1 and 100 with limited attempts, real-time feedback, and helpful hints.
+        </p>
+        <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+        <div class="project-links">
+            <a href="./projects/Number_Guessing_Game/" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="./projects/Number_Guessing_Game/index.html" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live
+            </a>
+        </div>
+        <div class="project-footer">
+            <span>By</span>
+            <a href="https://github.com/Sneha-Amballa" target="_blank">Amballa Sneha</a>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <h2>Pathfinding Visualizer</h2>
+        <p class="project-desc">
+            An interactive pathfinding visualizer that demonstrates various algorithms
+            like Dijkstra's, A*, BFS, and DFS on a grid with walls and weights.
+        </p>
+        <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+        <div class="project-links">
+            <a href="./projects/Pathfinding_Visualizer/" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live
+            </a>
+        </div>
+        <div class="project-footer">
+            <span>By</span>
+            <a href="https://github.com/omkarhole" target="_blank">Omkar</a>
+        </div>
+    </div>
+
+    <div class="project-card">
         <h2>Typing speed test</h2>
         <p class="project-desc">
-          A web-based typing speed test that measures words per minute (WPM) and
-          accuracy. Features a countdown timer, real-time feedback, and a
-          summary of results at the end.
-        </p>
-</div>
-<div class="project-card">
-        <h2>Password Strength Checker</h2>
-        <p class="project-desc">
-           Check the strength of your passwords to ensure they are secure and robust.
+            A web-based typing speed test that measures words per minute (WPM) and
+            accuracy. Features a countdown timer, real-time feedback, and a
+            summary of results at the end.
         </p>
         <div class="project-tags">
             <span>HTML</span>
             <span>CSS</span>
             <span>JavaScript</span>
         </div>
-
-    <div class="project-links">
-        <a href="./projects/password-strength-checker/index.html" target="_blank">
-            <i class="fas fa-external-link-alt"></i> Live
-        </a>
+        <div class="project-links">
+            <a href="./projects/typing-speed-test/" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live
+            </a>
+        </div>
+        <div class="project-footer">
+            <span>By</span>
+            <a href="https://github.com/omkarhole" target="_blank">Omkar</a>
+        </div>
     </div>
 
-    <div class="project-footer">
-        <span>By</span>
-        <a href="https://github.com/omkarhole" target="_blank">Omkar</a>
+    <div class="project-card">
+        <h2>Password Strength Checker</h2>
+        <p class="project-desc">
+            Check the strength of your passwords to ensure they are secure and robust.
+        </p>
+        <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+        <div class="project-links">
+            <a href="./projects/password-strength-checker/index.html" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live
+            </a>
+        </div>
+        <div class="project-footer">
+            <span>By</span>
+            <a href="https://github.com/omkarhole" target="_blank">Omkar</a>
+        </div>
     </div>
-    </div>
-
-
 
 </section>
 
@@ -703,14 +672,15 @@
 </footer>
 
 <script>
+// Navbar Hamburger Menu
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
 
 hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
-</script>
-<script>
+
+// View Toggle
 const viewToggleBtn = document.getElementById("viewToggleBtn");
 const projectsContainer = document.querySelector(".projects-container");
 
@@ -718,15 +688,14 @@ let isCompact = false;
 
 viewToggleBtn.addEventListener("click", () => {
     isCompact = !isCompact;
-
     projectsContainer.classList.toggle("compact-view");
-
+    
     viewToggleBtn.innerHTML = isCompact
         ? '<i class="fas fa-th-list"></i>'
         : '<i class="fas fa-th-large"></i>';
 });
-</script>
-<script>
+
+// Search, Filter, and Sort
 const searchInput = document.getElementById("searchInput");
 const filterButtons = document.querySelectorAll(".filter-btn");
 const sortSelect = document.getElementById("sortSelect");
@@ -760,173 +729,30 @@ sortSelect.addEventListener("change", () => {
             : nameB.localeCompare(nameA);
     });
 
-        <div class="project-tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-        </div>
+    const container = document.querySelector(".projects-container");
+    sorted.forEach(card => container.appendChild(card));
+});
 
-        <div class="project-links">
-          <a href="./projects/typing-speed-test/" target="_blank">
-            <i class="fas fa-external-link-alt"></i> Live
-          </a>
-        </div>
+// 🧠 Filter Logic
+function filterProjects(query, tech) {
+    projects.forEach(card => {
+        const title = card.querySelector("h2").innerText.toLowerCase();
+        const tags = card.querySelector(".project-tags").innerText.toLowerCase();
+        const author = card.querySelector(".project-footer").innerText.toLowerCase();
 
-        <div class="project-footer">
-          <span>By</span>
-          <a href="https://github.com/omkarhole" target="_blank">omkar</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <p>© 2026 Community Hall of Fame</p>
-      <p>Built with ❤️ by the Open Source Community</p>
-    </footer>
-
-    <script>
-      const hamburger = document.getElementById("hamburger");
-      const navLinks = document.getElementById("navLinks");
-
-      hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-    </script>
-    <script>
-      const viewToggleBtn = document.getElementById("viewToggleBtn");
-      const projectsContainer = document.querySelector(".projects-container");
-
-      let isCompact = false;
-
-      viewToggleBtn.addEventListener("click", () => {
-        isCompact = !isCompact;
-
-        projectsContainer.classList.toggle("compact-view");
-
-        viewToggleBtn.innerHTML = isCompact
-          ? '<i class="fas fa-th-list"></i>'
-          : '<i class="fas fa-th-large"></i>';
-      });
-    </script>
-    <script>
-      const searchInput = document.getElementById("searchInput");
-      const filterButtons = document.querySelectorAll(".filter-btn");
-      const sortSelect = document.getElementById("sortSelect");
-      const projects = Array.from(document.querySelectorAll(".project-card"));
-
-      let activeFilter = "all";
-
-      // 🔍 Search
-      searchInput.addEventListener("input", () => {
-        const query = searchInput.value.toLowerCase();
-        filterProjects(query, activeFilter);
-      });
-
-      // 🏷 Filter
-      filterButtons.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          filterButtons.forEach((b) => b.classList.remove("active"));
-          btn.classList.add("active");
-          activeFilter = btn.dataset.tech;
-          filterProjects(searchInput.value.toLowerCase(), activeFilter);
-        });
-      });
-
-      // 🔃 Sort
-      sortSelect.addEventListener("change", () => {
-        const sorted = projects.sort((a, b) => {
-          const nameA = a.querySelector("h2").innerText.toLowerCase();
-          const nameB = b.querySelector("h2").innerText.toLowerCase();
-          return sortSelect.value === "az"
-            ? nameA.localeCompare(nameB)
-            : nameB.localeCompare(nameA);
-        });
-
-        const container = document.querySelector(".projects-container");
-        sorted.forEach((card) => container.appendChild(card));
-      });
-
-      // 🧠 Filter Logic
-      function filterProjects(query, tech) {
-        projects.forEach((card) => {
-          const title = card.querySelector("h2").innerText.toLowerCase();
-          const tags = card
-            .querySelector(".project-tags")
-            .innerText.toLowerCase();
-          const author = card
-            .querySelector(".project-footer")
-            .innerText.toLowerCase();
-
-          const matchesSearch =
+        const matchesSearch =
             title.includes(query) ||
             tags.includes(query) ||
             author.includes(query);
 
-          const matchesTech = tech === "all" || tags.includes(tech);
-
-          card.style.display = matchesSearch && matchesTech ? "flex" : "none";
-        });
-      }
-    </script>
-
-    <script>
-      const viewToggleBtn = document.getElementById("viewToggleBtn");
-      const projectsContainer = document.querySelector(".projects-container");
-
-      let isCompact = localStorage.getItem("projectsView") === "compact";
-
-      function applyView(compact) {
-        isCompact = compact;
-        projectsContainer.classList.toggle("compact-view", compact);
-        viewToggleBtn.innerHTML = compact
-          ? '<i class="fas fa-th-list"></i>'
-          : '<i class="fas fa-th-large"></i>';
-        viewToggleBtn.setAttribute("aria-pressed", compact ? "true" : "false");
-        viewToggleBtn.title = compact
-          ? "Switch to grid view"
-          : "Switch to list view";
-        localStorage.setItem("projectsView", compact ? "compact" : "grid");
-      }
-
-      viewToggleBtn.addEventListener("click", () => applyView(!isCompact));
-
-      // Initialize on load
-      applyView(isCompact);
-    </script>
-  </body>
         const matchesTech =
             tech === "all" || tags.includes(tech);
 
         card.style.display =
-            matchesSearch && matchesTech ? "flex" : "none";
+            matchesSearch && matchesTech ? "" : "none";
     });
 }
 </script>
-
-<!-- <script>
-const viewToggleBtn = document.getElementById("viewToggleBtn");
-const projectsContainer = document.querySelector(".projects-container");
-
-let isCompact = localStorage.getItem('projectsView') === 'compact';
-
-function applyView(compact) {
-    isCompact = compact;
-    projectsContainer.classList.toggle('compact-view', compact);
-    viewToggleBtn.innerHTML = compact
-        ? '<i class="fas fa-th-list"></i>'
-        : '<i class="fas fa-th-large"></i>';
-    viewToggleBtn.setAttribute('aria-pressed', compact ? 'true' : 'false');
-    viewToggleBtn.title = compact ? 'Switch to grid view' : 'Switch to list view';
-    localStorage.setItem('projectsView', compact ? 'compact' : 'grid');
-}
-
-viewToggleBtn.addEventListener('click', () => applyView(!isCompact));
-
-// Initialize on load
-applyView(isCompact);
-</script> -->
-
 
 </body>
 </html>
