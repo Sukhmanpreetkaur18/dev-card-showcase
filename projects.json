@@ -3648,6 +3648,8 @@
 {
   "title": "Continuous Line Drawing Challenge ✍️",
   "description": "A drawing challenge where users must draw without lifting the mouse.",
+  "title": "Color Sorting Puzzle 🧪🎨",
+  "description": "A colorful logic puzzle where users sort layered colors into correct jars.",
   "title": "Spot the Mistake 🔍",
   "description": "A visual challenge where users find logical or UI mistakes between similar layouts.",
   "title": "Emoji Emotion Guess Game 😄🤔",
@@ -3665,6 +3667,11 @@
   "links": {
     "live": "./projects/continuous-line-drawing-challenge/index.html"
     "Game",
+    "Logic",
+    "Puzzle"
+  ],
+  "links": {
+    "live": "./projects/color-sorting-puzzle/index.html"
     "Brain Training",
     "UI Awareness"
   ],
