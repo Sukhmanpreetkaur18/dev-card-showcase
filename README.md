@@ -123,3 +123,17 @@ It keeps us going and growing!
 
 ### Be a part of the Open Source community and see your profile shine! 🚀
 ## Happy Coding! 💻
+
+
+---
+
+## 🧑‍💻 How to Contribute (Beginner Guide)
+
+We welcome contributions from everyone, especially beginners!
+
+### Step 1: Fork the repository
+Click the **Fork** button on the top-right corner of this repository.
+
+### Step 2: Clone your fork
+```bash
+git clone https://github.com/<your-username>/dev-card-showcase.git
