@@ -2416,4 +2416,25 @@
             "github": "https://github.com/pavanakarthik12"
         }
     }
+},
+ {
+        "title": "PixelMotion - Sprite Animation Studio",
+        "description": "A professional-grade pixel art animation studio in the browser. Features a multi-track timeline sequencer, customizable onion skinning engine, advanced drawing tools (Bresenham pencil, flood fill), and sprite sheet export capabilities.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Canvas",
+            "Animation",
+            "Tool"
+        ],
+        "links": {
+            "live": "./projects/PixelMotion/index.html"
+        },
+        "author": {
+            "name": "Sai",
+            "github": "https://github.com/saiusesgithub"
+        }
+    }
+
 ]
