@@ -191,6 +191,7 @@
             "github": "https://github.com/neeru24"
         }
     },
+    {
     "title": "PDF Watermark Tool",
     "description": "Browser-based tool to add text/image watermarks to PDFs with full customization. Process files locally for privacy.",
     "tags": [
@@ -4611,6 +4612,22 @@
         "name":"PavanKarthik",
         "github":"https://github.com/pavanakarthik12"
     }
-}
-
+},
+    {
+        "title": "Pixel Painter",
+        "description": "A grid-based pixel art creator with color picker, clear function, and export to PNG. Paint pixel art on a 32x32 grid with mouse or touch.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Art Tool"
+        ],
+        "links": {
+            "live": "./projects/pixel-painter/index.html"
+        },
+        "author": {
+            "name": "Gupta-02",
+            "github": "https://github.com/Gupta-02"
+        }
+    }
 ]
