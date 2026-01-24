@@ -5091,5 +5091,23 @@
         "name": "Gupta-02",
         "github": "https://github.com/Gupta-02"
     }
+},
+{
+    "title": "Retro Learning Arcade",
+    "description": "A retro-style learning arcade interface with mini educational games and a scoring system. Features logic puzzles, quick math challenges, and traffic rules quizzes in a pixel-themed arcade environment.",
+    "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Game",
+        "Educational"
+    ],
+    "links": {
+        "live": "./projects/Retro-Learning-Arcade/index.html"
+    },
+    "author": {
+        "name": "Sneha Amballa",
+        "github": "https://github.com/Sneha-Amballa"
+    }
 }
 ]
