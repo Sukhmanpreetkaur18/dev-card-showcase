@@ -480,6 +480,22 @@
             "github": "https://github.com/omkarhole"
         }
     },
+        {
+        "title": "Personality Generator",
+        "description": "A web application that generates unique personality descriptions based on user input and predefined traits.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/personality-generator/index.html"
+        },
+        "author": {
+            "name": "Neeru",
+            "github": "https://github.com/neeru24"
+        }
+    },
     {
         "title": "2048 – Luxury Edition",
         "description": "A modern and visually refined version of the classic 2048 puzzle game featuring smooth tile animations, glassmorphism-inspired design, responsive controls, and score tracking for a satisfying and polished gameplay experience.",
