@@ -1,0 +1,77 @@
+/* ===== NAVBAR COMMON STYLES ===== */
+
+  :root {
+  --navbar-height: 80px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: var(--navbar-height);
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 24px;
+  background-color: #111;
+}
+
+
+.nav-logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ===== HAMBURGER ===== */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background: #111;
+    flex-direction: column;
+    display: none;
+    padding: 16px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+

@@ -1,6 +1,15 @@
 /* =========================================
    THEME VARIABLES - DARK (DEFAULT)
    ========================================= */
+
+
+/* FORCE FIX: prevent navbar overlap */
+
+/* Offset content for fixed navbar */
+#main-content {
+    margin-top: 80px;
+}
+
 :root {
     /* Dark Theme Colors */
     --bg-primary: #0f172a;
@@ -57,6 +66,7 @@
     --navbar-gradient-bottom: rgba(37, 62, 104, 0.65);
     --navbar-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
+
 
 /* =========================================
    IMAGE UPLOADER STYLES
@@ -2121,13 +2131,10 @@ body[data-theme="light"] .footer {
    CIRCLE CURSOR EFFECT
    ========================================= */
 .circle-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 9999;
+    position: relative;
+    z-index: 1;
+
+    padding-top: 120px;
 }
 
 .circle {
@@ -4150,3 +4157,7 @@ body[data-theme="light"] .toast-message {
 
 
 
+/*improve spacing below navbar to avoid content overlap*/
+.search-filter-container {
+    margin-top: 1.5rem;
+}

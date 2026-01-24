@@ -98,13 +98,6 @@ header h1 {
     transition: var(--transition);
 }
 
-.circle-container {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .outer-circle {
     width: 300px;
