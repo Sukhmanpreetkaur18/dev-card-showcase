@@ -18,6 +18,22 @@
         }
     },
     {
+        "title": "Unit Converter Hub",
+        "description": "A compact and responsive unit conversion utility that allows users to convert values across multiple categories such as length, weight, and temperature. Designed with a clean UI and smooth UX for quick and accurate conversions.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/unit-converter-hub/"
+        },
+        "author": {
+            "name": "Anvesha",
+            "github": "https://github.com/your-github-username"
+        }
+    },
+    {
         "title": "Symon Says Game",
         "description": "A fun and interactive memory game where players must repeat increasingly complex sequences of colors and sounds. Features multiple difficulty levels, score tracking, and engaging animations.",
         "tags": [
