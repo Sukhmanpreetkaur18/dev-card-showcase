@@ -1,5 +1,56 @@
 [
     {
+        "title": "Brick Breaker",
+        "description": "A classic Brick Breaker (Breakout) game with paddle controls, ball physics, brick grid destruction, power-ups, and level progression. Features score tracking, lives system, and arcade-style gameplay.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Game",
+            "Canvas"
+        ],
+        "links": {
+            "live": "./brickbreaker.html"
+        },
+        "author": {
+            "name": "Sneha Amballa",
+            "github": "https://github.com/Sneha-Amballa"
+        }
+    },
+      {
+        "title": "Battle of Elements",
+        "description": "A simple card game where two players draw cards and the player with the higher card wins the round. The game continues until all cards are played, and the player with the most rounds won is declared the overall winner.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Utility Tool"
+        ],
+        "links": {
+            "live": "./projects/Battle-of-Elements-Game/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
+    {
+        "title": "Unit Converter Hub",
+        "description": "A compact and responsive unit conversion utility that allows users to convert values across multiple categories such as length, weight, and temperature. Designed with a clean UI and smooth UX for quick and accurate conversions.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/unit-converter-hub/"
+        },
+        "author": {
+            "name": "Anvesha",
+            "github": "https://github.com/your-github-username"
+        }
+    },
+    {
         "title": "Symon Says Game",
         "description": "A fun and interactive memory game where players must repeat increasingly complex sequences of colors and sounds. Features multiple difficulty levels, score tracking, and engaging animations.",
         "tags": [
@@ -10,6 +61,88 @@
         ],
         "links": {
             "live": "./projects/simon-game/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
+      {
+        "title": "Stacking Cards Game",
+        "description": "A simple and addictive stacking cards game where players must stack moving cards as high as possible without letting them fall. Features smooth animations, score tracking, and increasing difficulty levels.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Utility Tool"
+        ],
+        "links": {
+            "live": "./projects/Stacking-Cards/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
+     {
+        "title": "Fading snake game",
+        "description": "Simple Fading snake game.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Utility Tool"
+        ],
+        "links": {
+            "live": "./projects/fading-snake/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
+      {
+        "title": "Lego Builder Project",
+        "description": "A 3D Lego building game where players can create structures using different brick sizes and colors. Features include rotation, placement, and deletion of bricks in a 3D environment.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/Lego-Builder/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
+        {
+        "title": "Pet Name Generator",
+        "description": "A fun web application that generates unique and creative pet names based on user-selected criteria such as pet type, personality traits, and themes.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/pet-name-generator/index.html"
+        },
+        "author": {
+            "name": "Neeru",
+            "github": "https://github.com/neeru24"
+        }
+    },
+    {
+        "title": "Guess the Word Game",
+        "description": "An engaging word guessing game where players attempt to identify a hidden word by guessing letters within a limited number of attempts. Features multiple categories, hints, and score tracking.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/Guess-The-Word/index.html"
         },
         "author": {
             "name": "Omkar",
@@ -65,6 +198,22 @@
             "github": "https://github.com/neeru24"
         }
     },
+      {
+        "title": "HSL Color Game",
+        "description": "An engaging color guessing game where players identify colors based on their HSL values. Features multiple levels, score tracking, and a vibrant user interface.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/hsl-color-game/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
     {
         "title": "Physics Sandbox",
         "description": "A physics simulation sandbox with interactive controls and visualizations.",
@@ -98,6 +247,23 @@
             "github": "https://github.com/omkarhole"
         }
     },
+       {
+        "title": "Virtual Keyboard",
+        "description": "An interactive virtual keyboard that allows users to type using on-screen keys, complete with visual feedback and support for multiple keyboard layouts.",
+              "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/virtual-keyboard/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+           
+        }
+           },
     {
         "title": "Memory Game",
         "description": "A classic memory card matching game with multiple themes and difficulty levels.",
@@ -415,6 +581,22 @@
         }
     },
     {
+        "title": "Git visualizer",
+        "description": "A web application that visualizes Git commands and workflows through interactive diagrams and animations, helping users understand version control concepts.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/git-visualizer/index.html"
+        },
+        "author": {
+            "name": "CodeMaster",
+            "github": "https://github.com/CodeMaster"
+        }
+    },
+    {
         "title": "PDF Watermark Tool",
         "description": "Browser-based tool to add text/image watermarks to PDFs with full customization. Process files locally for privacy.",
         "tags": [
@@ -529,6 +711,38 @@
         }
     },
     {
+        "title": "Pet Name Generator",
+        "description": "A fun web application that generates unique and creative pet names based on user-selected criteria such as pet type, personality traits, and themes.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/pet-name-generator/index.html"
+        },
+        "author": {
+            "name": "Neeru",
+            "github": "https://github.com/neeru24"
+        }
+    },
+    {
+        "title": "Country Info App",
+        "description": "A web application that provides detailed information about countries worldwide. Users can search for countries, view their flags, capitals, populations, and other relevant data fetched from a public API.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/country-info-app/index.html"
+        },
+        "author": {
+            "name": "Neeru",
+            "github": "https://github.com/neeru24"
+        }
+    },
+    {
         "title": "Event Reminder",
         "description": "A smart utility that helps users create, manage, and track upcoming events in one place. It highlights today\u2019s, upcoming, and overdue events while using LocalStorage to ensure reminders persist across sessions.",
         "tags": [
@@ -594,6 +808,54 @@
             "github": "https://github.com/omkarhole"
         }
     },
+        {
+        "title": "Study Timer",
+        "description": "A Pomodoro-style study timer that helps users focus on tasks with timed intervals of work and breaks.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/StudyTimer/index.html"
+        },
+        "author": {
+            "name": "Neeru",
+            "github": "https://github.com/neeru24"
+        }
+    },
+        {
+        "title": "Catch the Ball Game",
+        "description": "An exciting game where players control a basket to catch falling balls while avoiding obstacles. Features increasing difficulty levels, score tracking, and engaging gameplay.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/catch-the-falling-objects/index.html"
+        },
+        "author": {
+            "name": "Neeru",
+            "github": "https://github.com/neeru24"
+        }
+    },
+            {
+        "title": "Wallpaper Generator",
+        "description": "A tool that generates beautiful gradient wallpapers with the ability to download them.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/WallpaperGenerator/index.html"
+        },
+        "author": {
+            "name": "Neeru",
+            "github": "https://github.com/neeru24"
+        }
+    },
     {
         "title": "Code Editor",
         "description": "A professional code editor with multi-language support, customizable themes, real-time preview, and essential features like code download and clearing.",
@@ -644,6 +906,22 @@
         }
     },
     {
+        "title": "Carbon Footprint Calculator",
+        "description": "A web application that helps users estimate their carbon footprint based on lifestyle choices such as transportation, energy consumption, and diet. Provides tips for reducing environmental impact.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/CarbonFootprintCalculator/index.html"
+        },
+        "author": {
+            "name": "Neeru",
+            "github": "https://github.com/neeru24"
+        }
+    },
+    {
         "title": "Horse Run Game",
         "description": "An exciting endless runner game where players control a horse to jump over obstacles and collect coins. Features increasing speed and score tracking for added challenge.",
         "tags": [
@@ -673,6 +951,22 @@
         "author": {
             "name": "Omkar",
             "github": "https://github.com/omkarhole"
+        }
+    },
+        {
+        "title": "Spot the Difference Game",
+        "description": "A fun and challenging game where players must find differences between two similar images within a time limit. Features multiple levels and score tracking.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/SpotDifference/index.html"
+        },
+        "author": {
+            "name": "Neeru",
+            "github": "https://github.com/neeru24"
         }
     },
     {
@@ -723,6 +1017,22 @@
             "github": "https://github.com/PriyanshuSingh00-hub"
         }
     },
+            {
+        "title": "Periodic Table Quiz",
+        "description": "An interactive quiz game that tests users' knowledge of the periodic table. Features multiple-choice questions, score tracking, and a timer for added challenge.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/PeriodicTableQuiz/index.html"
+        },
+        "author": {
+            "name": "Neeru",
+            "github": "https://github.com/neeru24"
+        }
+    },
         {
     "title": "Lunar Lander — Luxury Edition",
     "description": "A premium physics-based Lunar Lander game featuring realistic gravity and thrust mechanics, smooth animations, particle effects, and a rich, glassmorphism-inspired user interface built with pure web technologies.",
@@ -740,7 +1050,22 @@
     }
     },
 
-
+            {
+        "title": "Water Flow Simulation",
+        "description": "A visually stunning water flow simulation with realistic physics and interactive controls.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/WaterFlowAnimation/index.html"
+        },
+        "author": {
+            "name": "Neeru",
+            "github": "https://github.com/neeru24"
+        }
+    },
     {
         "title": "Hangman Game",
         "description": "A classic Hangman game where players guess letters to reveal a hidden word before running out of attempts. Features multiple categories, hints, and a scoring system.",
@@ -787,6 +1112,22 @@
         "author": {
             "name": "Omkar",
             "github": "https://github.com/omkarhole"
+        }
+    },
+                {
+        "title": "Monochrome Accent UI",
+        "description": "A sleek and modern user interface design featuring a monochrome color scheme with accent colors for highlights. Perfect for portfolios, dashboards, or any web application requiring a clean aesthetic.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/MonochromeAccentUI/index.html"
+        },
+        "author": {
+            "name": "Neeru",
+            "github": "https://github.com/neeru24"
         }
     },
     {
@@ -851,6 +1192,22 @@
         "author": {
             "name": "Anvesha",
             "github": "https://github.com/your-github-username"
+        }
+    },
+    {
+        "title": "Periodic Table",
+        "description": "The periodic table that provides detailed information about each element, including atomic number, symbol, atomic mass, and electron configuration. Features search functionality and responsive design for easy access on all devices.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/periodic-table/index.html"
+        },
+        "author": {
+            "name": "CodeMaster",
+            "github": "https://github.com/CodeMaster11000"
         }
     },
     {
@@ -1924,6 +2281,22 @@
         }
     },
     {
+        "title": "Tilting Maze Game",
+        "description": "A maze game where players navigate a ball through a maze by tilting their device or using arrow keys, avoiding obstacles and reaching the goal.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/tilting-maze/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
+    {
         "title": "Typing speed test",
         "description": "A web-based typing speed test that measures words per minute (WPM) and accuracy. Features a countdown timer, real-time feedback, and a summary of results at the end.",
         "tags": [
@@ -1965,6 +2338,22 @@
         ],
         "links": {
             "live": "./projects/digital-clock/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
+      {
+        "title": "Smart classroom timetable",
+        "description": "A web application that helps students manage their class schedules effectively by providing a clear and organized timetable view.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/smart-timetable/index.html"
         },
         "author": {
             "name": "Omkar",
@@ -2035,7 +2424,7 @@
             "github": "https://github.com/omkarhole"
         }
     },
-     {
+  {
         "title": "motion Engine Lab",
         "description": "A web application that allows users to create and simulate various motion effects using physics principles like gravity, friction, and acceleration.",
         "tags": [
@@ -2043,7 +2432,7 @@
             "CSS",
             "JavaScript"
         ],
-        "links": {
+        "links":{
             "live": "./projects/motion-engine-lab/index.html"
         },
         "author": {
@@ -2051,6 +2440,7 @@
             "github": "https://github.com/omkarhole"
         }
     },
+  
     {
         "title": "Virtual Control Pannel",
         "description": "A virtual control panel that simulates various controls like buttons, switches, and sliders for interactive user experiences.",
@@ -2064,6 +2454,22 @@
         },
         "author": {
             "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
+    {
+        "title": "interview schedular",
+        "description": "A web application that helps users schedule and manage interviews with features like calendar integration, reminders, and candidate tracking.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/interview-schedular/index.html"
+        },
+        "author": {
+            "name": "omkar",
             "github": "https://github.com/omkarhole"
         }
     },
@@ -5218,42 +5624,120 @@
     "author": {
         "name": "PavanKarthik",
         "github": "https://github.com/pavanakarthik12"
-    "title": "AI-Style Image Captioner",
-    "description": "Upload an image and get a creative, AI-style caption generated for it. Features dynamic caption generation with templates and keywords.",
+    }
+},{
+    "title": "Retro Snake Reloaded",
+    "description": "A retro-styled Snake game with pixel graphics, keyboard controls, and progressive difficulty. Inspired by classic Nokia Snake games with modern HTML5 Canvas implementation.",
     "tags": [
         "HTML",
         "CSS",
         "JavaScript",
-        "Utility Tool",
-        "AI",
-        "Image"
+        "Canvas",
+        "Game"
     ],
     "links": {
-        "live": "./projects/ai-style-image-captioner/index.html"
+        "live": "./projects/Retro-Snake-Reloaded/index.html"
     },
     "author": {
-        "name": "Bavanetha27",
-        "github": "https://github.com/Bavanetha27"
+        "name": "Sneha Amballa",
+        "github": "https://github.com/Sneha-Amballa"
     }
 },
 {
-    "title": "Dynamic Maze Generator",
-    "description": "An interactive maze game that generates random mazes using DFS algorithm. Navigate with arrow keys, track time, and use hints to solve challenging puzzles.",
+    "title": "One-Line Art Challenge",
+    "description": "A creative drawing challenge where users must create artwork on a canvas without lifting the mouse at any point. Features timer, scoring system, and animated replay of the drawing path.",
     "tags": [
         "HTML",
         "CSS",
         "JavaScript",
-        "Game",
         "Canvas",
-        "Algorithm",
-        "Puzzle"
+        "Game"
     ],
     "links": {
-        "live": "./projects/dynamic-maze-generator/index.html"
+        "live": "./projects/One-Line-Art-Challenge/index.html"
     },
     "author": {
-        "name": "Bavanetha27",
-        "github": "https://github.com/Bavanetha27"
+        "name": "Sneha Amballa",
+        "github": "https://github.com/Sneha-Amballa"
+    }
+},
+{
+    "title" : "javalitejs",
+    "description": "A JavaScript library for creating java-like classes and objects. It provides a simple and intuitive way to define and work with java-like classes and objects in your JavaScript applications.",
+    "tags": [
+        "JavaScript",
+        "Java-like Classes",
+        "Library"
+    ],
+    "links": {
+        "live": "./projects/javalitejs/index.html"
+    },
+    "title": "Livetypingaura",
+    "description": "A live typing game where users must type a sentence as fast and accurately as possible. Features timer, scoring system, and typing accuracy calculation.",
+    "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Game"
+    ],
+    "links": {
+        "live": "./projects/Livetypingaura/index.html"
+    },
+    "author": {
+        "name": "Sneha Amballa",
+        "github": "https://github.com/Sneha-Amballa"
+    },
+    "title": "Djjs",
+    "description": "A JavaScript library for creating DJ-style visualizations. It provides a simple and intuitive way to define and work with DJ-style visualizations in your JavaScript applications.",
+    "tags": [
+        "JavaScript",
+        "DJ Visualization",
+        "Library"
+    ],
+    "links": {
+        "live": "./projects/djjs/index.html"
+    },
+    "author": {
+        "name": "PavanKarthik",
+        "github": "https://github.com/pavanakarthik12"
+    }
+},
+{
+    "title":"chromawave",
+    "description": "A JavaScript library for creating chroma-style visualizations. It provides a simple and intuitive way to define and work with chroma-style visualizations in your JavaScript applications.",
+    "tags": [
+        "JavaScript",
+        "Chroma Visualization",
+        "Library"
+    ],
+    "links": {
+        "live": "./projects/chromawave/index.html"
+    "title" : "Businessjs",
+    "description": "A JavaScript library for creating business-style visualizations. It provides a simple and intuitive way to define and work with business-style visualizations in your JavaScript applications.",
+    "tags": [
+        "JavaScript",
+        "Business Visualization",
+        "Library"
+    ],
+    "links": {
+        "live": "./projects/businessjs/index.html"
+    
+},
+{
+    "title": "Rocketjs",
+    "description": "A JavaScript library for creating rocket animations. It provides a simple and intuitive way to define and work with rocket animations in your JavaScript applications.",
+    "tags": [
+        "JavaScript",
+        "Rocket Animation",
+        "Library"
+    ],
+    "links": {
+        "live": "./projects/rocketjs/index.html"
+    },
+    "author": {
+        "name": "PavanKarthik",
+        "github": "https://github.com/pavanakarthik12"
     }
 }
 ]
+
