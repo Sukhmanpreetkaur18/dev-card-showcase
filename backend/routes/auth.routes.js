@@ -3,62 +3,94 @@ import bcrypt from "bcryptjs";
 import User from "../models/User.js";
 import { generateToken } from "../utils/generateToken.js";
 import { protect } from "../middleware/auth.middleware.js";
+import { sendMail } from "../utils/sendMail.js";
 
 const router = express.Router();
 
-// Register
+
 router.post("/register", async (req, res) => {
-  const { name, email, password } = req.body;
+  try {
+    const { name, email, password } = req.body;
 
-  const userExists = await User.findOne({ email });
-  if (userExists)
-    return res.status(400).json({ message: "User already exists" });
+    const userExists = await User.findOne({ email });
+    if (userExists)
+      return res.status(400).json({ message: "User already exists" });
 
-  const hashedPassword = await bcrypt.hash(password, 10);
+    const hashedPassword = await bcrypt.hash(password, 10);
 
-  const user = await User.create({
-    name,
-    email,
-    password: hashedPassword
-  });
+    const user = await User.create({
+      name,
+      email,
+      password: hashedPassword
+    });
 
-  generateToken(res, user._id);
+    generateToken(res, user._id);
 
-  res.json({
-    id: user._id,
-    name: user.name,
-    email: user.email
-  });
+    
+    await sendMail({
+      to: email,
+      subject: "Welcome to JustCoding 🚀",
+      html: `
+        <h2>Hello ${name},</h2>
+        <p>Your account has been created successfully.</p>
+        <p>You can now login securely using JWT Cookie authentication.</p>
+        <br/>
+        <b>– JustCoding Team</b>
+      `
+    });
+
+    res.status(201).json({
+      id: user._id,
+      name: user.name,
+      email: user.email
+    });
+  } catch (err) {
+    res.status(500).json({ message: "Registration failed" });
+  }
 });
 
-// Login
+
 router.post("/login", async (req, res) => {
-  const { email, password } = req.body;
+  try {
+    const { email, password } = req.body;
 
-  const user = await User.findOne({ email });
-  if (!user)
-    return res.status(400).json({ message: "Invalid credentials" });
+    const user = await User.findOne({ email });
+    if (!user)
+      return res.status(400).json({ message: "Invalid credentials" });
 
-  const isMatch = await bcrypt.compare(password, user.password);
-  if (!isMatch)
-    return res.status(400).json({ message: "Invalid credentials" });
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (!isMatch)
+      return res.status(400).json({ message: "Invalid credentials" });
 
-  generateToken(res, user._id);
+    generateToken(res, user._id);
 
-  res.json({
-    id: user._id,
-    name: user.name,
-    email: user.email
-  });
+
+    await sendMail({
+      to: email,
+      subject: "Login Alert 🔐",
+      html: `
+        <p>You have successfully logged in.</p>
+        <p>If this was not you, please secure your account immediately.</p>
+      `
+    });
+
+    res.json({
+      id: user._id,
+      name: user.name,
+      email: user.email
+    });
+  } catch (err) {
+    res.status(500).json({ message: "Login failed" });
+  }
 });
 
-// Logout
+
 router.post("/logout", (req, res) => {
   res.clearCookie("token");
   res.json({ message: "Logged out successfully" });
 });
 
-// Protected route
+
 router.get("/me", protect, async (req, res) => {
   const user = await User.findById(req.userId).select("-password");
   res.json(user);
