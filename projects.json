@@ -1,9 +1,7 @@
 [
     {
-        "title": "Tetris Mini",
-        "description": "A simplified Tetris game with falling tetrominoes, rotations, line clearing, and increasing difficulty. Features score tracking, level progression, and retro-style gameplay.",
-        "title": "Retro Learning Arcade",
-        "description": "A retro-style learning arcade interface with mini educational games including math challenges, logic puzzles, and traffic rules quizzes. Features pixel fonts, scoring system, and gamified learning experience.",
+        "title": "Pac-Man Inspired Maze",
+        "description": "A maze-based game inspired by Pac-Man where players collect dots while avoiding enemy ghosts. Features grid-based movement, score tracking, and simple AI for enemies.",
         "tags": [
             "HTML",
             "CSS",
@@ -12,12 +10,7 @@
             "Canvas"
         ],
         "links": {
-            "live": "./tetris.html"
-            "Educational",
-            "Game"
-        ],
-        "links": {
-            "live": "./pong.html"
+            "live": "./pacman.html"
         },
         "author": {
             "name": "Sneha Amballa",
