@@ -1,7 +1,9 @@
 [
     {
-        "title": "Brick Breaker",
-        "description": "A classic Brick Breaker (Breakout) game with paddle controls, ball physics, brick grid destruction, power-ups, and level progression. Features score tracking, lives system, and arcade-style gameplay.",
+        "title": "Tetris Mini",
+        "description": "A simplified Tetris game with falling tetrominoes, rotations, line clearing, and increasing difficulty. Features score tracking, level progression, and retro-style gameplay.",
+        "title": "Retro Learning Arcade",
+        "description": "A retro-style learning arcade interface with mini educational games including math challenges, logic puzzles, and traffic rules quizzes. Features pixel fonts, scoring system, and gamified learning experience.",
         "tags": [
             "HTML",
             "CSS",
@@ -10,7 +12,12 @@
             "Canvas"
         ],
         "links": {
-            "live": "./brickbreaker.html"
+            "live": "./tetris.html"
+            "Educational",
+            "Game"
+        ],
+        "links": {
+            "live": "./pong.html"
         },
         "author": {
             "name": "Sneha Amballa",
