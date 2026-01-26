@@ -174,14 +174,19 @@
         }
     },
     {
-        "title": "Guess the Word Game",
-        "description": "An engaging word guessing game where players attempt to identify a hidden word by guessing letters within a limited number of attempts. Features multiple categories, hints, and score tracking.",
+        "title": "Number System Converter",
+        "description": "A compact utility that converts numbers between Binary, Decimal, Octal, and Hexadecimal. Built with a consistent, responsive UI and clear visual output for quick and accurate base conversions.",
         "tags": [
             "HTML",
             "CSS",
             "JavaScript"
         ],
         "links": {
+            "live": "./projects/number-system-converter/"
+        },
+        "author": {
+            "name": "Anvesha",
+            "github": "https://github.com/your-github-username"
             "live": "./projects/Guess-The-Word/index.html"
         },
         "author": {
@@ -204,6 +209,22 @@
         "author": {
             "name": "Amballa Sneha",
             "github": "https://github.com/Sneha-Amballa"
+        }
+    },
+    {
+        "title": "Word Counter",
+        "description": "A minimal and responsive word counting utility that provides real-time statistics for words, characters, and characters without spaces. Designed with a clean UI for quick and accurate text analysis.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/word-counter/"
+        },
+        "author": {
+            "name": "Anvesha",
+            "github": "https://github.com/your-github-username"
         }
     },
     {
