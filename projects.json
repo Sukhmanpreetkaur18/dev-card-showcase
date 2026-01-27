@@ -1,5 +1,25 @@
 [
     {
+        "title": "Mech Arena Skirmish",
+        "description": "Pilot a mech in compact 3D battle arenas with modular mech combat. Features loadout selection, destructible cover, and cooldown skills for tactical combat in short sessions.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Game",
+            "3D",
+            "Three.js",
+            "Action",
+            "Strategy"
+        ],
+        "links": {
+            "live": "./projects/Mech-Arena-Skirmish/"
+        },
+        "author": {
+            "name": "Gupta",
+            "github": "https://github.com/Gupta-02"
+        }
+    },{
         "title": "Island Builder",
         "description": "A cozy tile-placement strategy game where players build island paradises by strategically placing tiles to maximize adjacency scoring. Features random tile deck, turn-based gameplay, and beautiful island-building mechanics.",
         "tags": [
@@ -20,6 +40,38 @@
         }
     },
     {
+        "title": "ResultWise - Universal Result Analyzer",
+        "description": "A flexible and user-friendly result analysis utility that allows users to dynamically add any subjects and marks. It calculates total marks, percentage, grade, and pass/fail status while providing clear performance feedback, all within a clean and responsive interface.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/result-analyzer/"
+        },
+        "author": {
+            "name": "Anvesha",
+            "github": "https://github.com/your-github-username"
+        }
+    },
+  {
+        "title": "Digital Energy Meter",
+        "description": "A digital energy meter that displays real-time energy consumption and provides controls for managing energy usage. Features include live energy flow visualization, adjustable drain rate, quick charge, pause drain, and reset functions, all within a clean and responsive interface.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/DigitalEnergyMeter/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
+    {
         "title": "Gravity Golf",
         "description": "A physics-based puzzle golf game where players launch a ball around planets using gravity wells to reach the goal flag. Features slingshot mechanics, orbital trajectories, par scoring system, and progressive difficulty levels.",
         "tags": [
@@ -37,6 +89,22 @@
         "author": {
             "name": "Gupta",
             "github": "https://github.com/Gupta-02"
+        }
+    },
+     {
+        "title": "Mario world Game",
+        "description": "A side-scrolling platformer game inspired by classic Mario games. Players navigate through levels, avoid obstacles, collect coins, and defeat enemies to reach the end goal.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/mario-world/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
         }
     },
     {
@@ -68,6 +136,43 @@
         ],
         "links": {
             "live": "./projects/3DMouse/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
+    {
+        "title": "Password Genie - Random Password Generator",
+        "description": "A modern and interactive password generator that allows users to create strong and secure passwords. Users can customize password length and include uppercase, lowercase, numbers, and symbols. It also features a strength indicator and a convenient copy-to-clipboard function, all within a clean and responsive interface.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/pass-genie/"
+        },
+        "author": {
+            "name": "Anvesha",
+            "github": "https://github.com/your-github-username"
+        }
+    },
+     {
+        "title": "Stagger Direction Visualizer",
+        "description": "A web application that visualizes staggered animations in different directions. Users can select the direction and see how elements animate in a staggered manner.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Game",
+            "3D",
+            "Three.js",
+            "Action",
+            "Strategy"
+        ],
+        "links": {
+            "live": "./projects/Stagger-Direction-Visualizer/index.html"
         },
         "author": {
             "name": "Omkar",
@@ -121,7 +226,23 @@
         },
         "author": {
             "name": "Anvesha",
-            "github": "https://github.com/omkarhole"
+            "github": "https://github.com/your-github-username"
+        }
+    },
+    {
+        "title": "DeciWise - Smart Decision Maker",
+        "description": "A smart yes/no decision-making utility that helps users make thoughtful choices instead of random guesses. It analyzes the user's question using keyword-based logic and provides a clear decision along with a meaningful explanation, wrapped in a clean and modern UI.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/deciwise/"
+        },
+        "author": {
+            "name": "Anvesha",
+            "github": "https://github.com/your-github-username"
         }
     },
       {
@@ -158,6 +279,20 @@
             "github": "https://github.com/omkarhole"
         }
     },
+    {
+        "title": "Coin Toss Simulator",
+        "description": "A fun and interactive coin toss simulator with realistic coin animation. Features smooth 3D-style toss animation, Heads/Tails results, and a responsive, polished UI for an engaging user experience.",
+        "tags": ["HTML",
+         "CSS", 
+         "JavaScript"],
+        "links": {
+            "live": "./projects/coin-toss/"
+        },
+        "author": {
+            "name": "Anvesha",
+            "github": "https://github.com/your-github-username"
+        }
+},
       {
         "title": "Stacking Cards Game",
         "description": "A simple and addictive stacking cards game where players must stack moving cards as high as possible without letting them fall. Features smooth animations, score tracking, and increasing difficulty levels.",
@@ -253,15 +388,26 @@
             "live": "./projects/number-system-converter/"
         },
         "author": {
-            "name": "Anvesha",
-            "github": "https://github.com/your-github-username"
-            "live": "./projects/Guess-The-Word/index.html"
-        },
-        "author": {
             "name": "Omkar",
             "github": "https://github.com/omkarhole"
         }
     },
+    {
+        "title": "Spin the Wheel",
+        "description": "An interactive and game-like spin-the-wheel utility that helps users make fun decisions. Features smooth animations, accurate pointer-aligned results, and a polished arcade-style UI for an engaging experience.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/spin-the-wheel/"
+        },
+        "author": {
+            "name": "Anvesha",
+            "github": "https://github.com/your-github-username"
+        }
+        },
     {
         "title": "Advanced Text Case Converter",
         "description": "A powerful text utility that converts text into multiple cases including uppercase, lowercase, sentence case, title case, and toggle case with live preview, undo history, and keyboard shortcuts.",
@@ -675,6 +821,23 @@
             "github": "https://github.com/neeru24"
         }
     },
+         {
+        "title": "Cosmic Drift — Ultra Edition",
+        "description": "A visually rich space-drift game featuring smooth inertia-based movement, glowing particle trails, energy collection mechanics, and a luxurious glassmorphism-inspired interface for an engaging and easy-to-play experience.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/cosmic-drift/index.html"
+        },
+        "author": {
+            "name": "Priyanshu",
+            "github": "https://github.com/PriyanshuSingh00-hub"
+        }
+        },
+
     {
         "title": "Untangle Puzzle Game",
         "description": "An engaging untangle puzzle game where players must rearrange interconnected nodes to eliminate overlapping lines. Features multiple difficulty levels, timer, and move counter for an immersive experience.",
@@ -760,19 +923,24 @@
         }
     },
     {
-        "title": "Dragon Escape Game",
-        "description": "An exciting endless runner game where players control a dragon to escape a dungeon, avoiding obstacles and collecting treasures. Features increasing speed and score tracking for added challenge.",
+        "title": "Dungeon Escape",
+        "description": "A grid-based dungeon escape game where players navigate through a maze, collect keys to unlock doors, avoid traps and enemies, and reach the exit. Features turn-based movement with WASD controls and increasing difficulty levels.",
         "tags": [
             "HTML",
             "CSS",
-            "JavaScript"
+            "JavaScript",
+            "Game",
+            "Canvas",
+            "Grid",
+            "Puzzle",
+            "RPG"
         ],
         "links": {
-            "live": "./projects/dungeon-escape/index.html"
+            "live": "./projects/dungeon-escape/"
         },
         "author": {
-            "name": "Omkar",
-            "github": "https://github.com/omkarhole"
+            "name": "Sneha-Amballa",
+            "github": "https://github.com/Sneha-Amballa"
         }
     },
     {
@@ -1092,7 +1260,7 @@
         ],
         "links": {
             "live": "./projects/SpotDifference/index.html"
-        },
+        }, 
         "author": {
             "name": "Neeru",
             "github": "https://github.com/neeru24"
@@ -1112,6 +1280,22 @@
         "author": {
             "name": "CodeMaster",
             "github": "https://github.com/CodeMaster11000"
+        }
+    },
+            {
+        "title": "Virtual Coffee Maker",
+        "description": "A fun and interactive virtual coffee maker where users can customize their drink with various options like temperature, sugar level, and toppings.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/virtualcoffee/index.html"
+        },
+        "author": {
+            "name": "Neeru",
+            "github": "https://github.com/neeru24"
         }
     },
     {
@@ -1273,6 +1457,22 @@
         "author": {
             "name": "Omkar",
             "github": "https://github.com/omkarhole"
+        }
+    },
+                {
+        "title": "Memory Matching Game",
+        "description": "A classic memory matching game where players flip cards to find matching pairs. Features multiple themes, difficulty levels, and a timer for added challenge.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/MemoryMatching/index.html"
+        },
+        "author": {
+            "name": "Neeru",
+            "github": "https://github.com/neeru24"
         }
     },
     {
@@ -3354,7 +3554,12 @@
     "links": {
       "live": "./projects/advanced-reaction-time/index.html"
     },
-    {
+    "author": {
+        "name": "Omkar",
+        "github": "https://github.com/omkarhole"
+    }
+},
+{
         "title": "Weather Sculprate Game",
         "description": "An engaging weather-themed game where players sculpt clouds to match given weather conditions. Features multiple levels, scoring, and interactive gameplay.",
         "tags": [
@@ -3400,6 +3605,22 @@
         "author": {
             "name": "Anvesha",
             "github": "https://github.com/your-github-username"
+        }
+    },
+        {
+        "title": "Playing Card Preloader",
+        "description": "A visually appealing preloader animation featuring a deck of playing cards that shuffle and deal themselves, providing an engaging loading experience for web applications.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/PlayingCardPreloader/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
         }
     },
     {
@@ -5919,6 +6140,13 @@
     ],
     "links": {
         "live": "./projects/chromawave/index.html"
+    },
+    "author": {
+        "name": "PavanKarthik",
+        "github": "https://github.com/pavanakarthik12"
+    }
+},
+{
     "title" : "Businessjs",
     "description": "A JavaScript library for creating business-style visualizations. It provides a simple and intuitive way to define and work with business-style visualizations in your JavaScript applications.",
     "tags": [
@@ -5928,73 +6156,122 @@
     ],
     "links": {
         "live": "./projects/businessjs/index.html"
-    
+    },
+    "author": {
+        "name": "PavanKarthik",
+        "github": "https://github.com/pavanakarthik12"
+    }
 },
 {
     "title": "Rocketjs",
     "description": "A JavaScript library for creating rocket animations. It provides a simple and intuitive way to define and work with rocket animations in your JavaScript applications.",
-    "tags": [
-        "JavaScript",
-        "Rocket Animation",
-        "Library"
-    ],
+    "tags": ["JavaScript", "Rocket Animation", "Library"],
     "links": {
-        "live": "./projects/rocketjs/index.html"
+      "live": "./projects/rocketjs/index.html"
+    },
+    "author": {
+      "name": "PavanKarthik",
+      "github": "https://github.com/pavanakarthik12"
+    }
+  },
+  {
+    "title": "chromawave",
+    "description": "A JavaScript library for creating chroma-style visualizations. It provides a simple and intuitive way to define and work with chroma-style visualizations in your JavaScript applications.",
+    "tags": ["JavaScript", "Chroma Visualization", "Library"],
+    "links": {
+      "live": "./projects/chromawave/index.html"
+    }
+  },
+  {
+    "title": "Businessjs",
+    "description": "A JavaScript library for creating business-style visualizations. It provides a simple and intuitive way to define and work with business-style visualizations in your JavaScript applications.",
+    "tags": ["JavaScript", "Business Visualization", "Library"],
+    "links": {
+      "live": "./projects/businessjs/index.html"
+    }
+  },
+  {
+    "title": "Ghostnet",
+    "description": "A JavaScript library for creating ghost animations. It provides a simple and intuitive way to define and work with ghost animations in your JavaScript applications.",
+    "tags": ["JavaScript", "Ghost Animation", "Library"],
+    "links": {
+        "live": "./projects/ghostnet/index.html"
     },
     "author": {
         "name": "PavanKarthik",
         "github": "https://github.com/pavanakarthik12"
     }
 },
-{
-    "title": "Ghostnet",
-    "description": "A JavaScript library for creating ghost animations. It provides a simple and intuitive way to define and work with ghost animations in your JavaScript applications.",
-    "tags": [
-        "JavaScript",
-        "Ghost Animation",
-        "Library"
-    ],
-    "links": {
-        "live": "./projects/ghostnet/index.html"
-    "title" : "Typemorph",
+
+  {
+    "title": "Typemorph",
     "description": "A JavaScript library for creating typewriter-style animations. It provides a simple and intuitive way to define and work with typewriter-style animations in your JavaScript applications.",
-    "tags": [
-        "JavaScript",
-        "Typewriter Animation",
-        "Library"
-    ],
+    "tags": ["JavaScript", "Typewriter Animation", "Library"],
     "links": {
         "live": "./projects/typemorph/index.html"
-    "title" :"CssPhysicslab",
-    "description": "A JavaScript library for creating physics-based animations using CSS. It provides a simple and intuitive way to define and work with physics-based animations in your JavaScript applications.",
-    "tags": [
-        "JavaScript",
-        "CSS Physics",
-        "Library"
-    ],
-    "links": {
-        "live": "./projects/cssphysicslab/index.html"
     },
     "author": {
         "name": "PavanKarthik",
         "github": "https://github.com/pavanakarthik12"
-    "title": "Skyrail Surfer (3D)",
-    "description": "Grind and jump across floating rails high above the clouds in this fast-paced 3D game. Auto-grind rails, manual jumps, mid-air tricks for score.",
-    "tags": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Three.js",
-        "Game",
-        "3D"
-    ],
+    }
+},
+
+  {
+    "title": "CssPhysicslab",
+    "description": "A JavaScript library for creating physics-based animations using CSS. It provides a simple and intuitive way to define and work with physics-based animations.",
+    "tags": ["JavaScript", "CSS Physics", "Library"],
     "links": {
-        "live": "./projects/skyrail-surfer-3d/index.html"
+      "live": "./projects/cssphysicslab/index.html"
     },
     "author": {
-        "name": "Gupta-02",
-        "github": "https://github.com/Gupta-02"
+        "name": "PavanKarthik",
+        "github": "https://github.com/pavanakarthik12"
     }
-}
+},
+
+  {
+    "title": "Retro Terminal Website",
+    "description": "A website that mimics an old computer terminal interface with command-based navigation. Features typing animation, green-on-black terminal UI, and interactive commands like help, about, and projects.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Terminal",
+      "Retro",
+      "Interactive",
+      "Portfolio"
+    ],
+    "links": {
+      "live": "./projects/retro-terminal-website/"
+    },
+    "author": {
+      "name": "Sneha-Amballa",
+      "github": "https://github.com/Sneha-Amballa"
+    }
+  },
+  {
+    "title": "Skyrail Surfer (3D)",
+    "description": "Grind and jump across floating rails high above the clouds in this fast-paced 3D game. Auto-grind rails, manual jumps, mid-air tricks for score.",
+    "tags": ["HTML", "CSS", "JavaScript", "Three.js", "Game", "3D"],
+    "links": {
+      "live": "./projects/skyrail-surfer-3d/index.html"
+    },
+    "author": {
+      "name": "Gupta-02",
+      "github": "https://github.com/Gupta-02"
+    }
+  },
+  {
+    "title": "Submarine Salvage",
+    "description": "Pilot a mini-sub to recover wreckage underwater. Features 3D underwater physics, sonar scanning, grab arms, and limited power/oxygen resources.",
+    "tags": ["HTML", "CSS", "JavaScript", "Three.js", "Game", "3D", "Underwater", "Physics"],
+    "links": {
+      "live": "./projects/Submarine-Salvage/index.html"
+    },
+    "author": {
+      "name": "Gupta-02",
+      "github": "https://github.com/Gupta-02"
+    }
+  }
 ]
 
